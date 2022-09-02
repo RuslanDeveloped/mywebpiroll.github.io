@@ -629,6 +629,7 @@ input {
 
   body .intro {
     padding: 0;
+    margin: 0;
   }
 
   .header {
@@ -696,7 +697,7 @@ input {
 
   .title_inner {
       font-size: 7px;
-    }
+  }
 
   .text_inner p {
       margin: 0;
@@ -719,8 +720,12 @@ input {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
+    flex-direction: column;
+  }
+
+  .count__number {
+    padding: 10px 0 10px 0;
+  }
 
   .work__photo {
     width: 200%;
@@ -773,4 +778,51 @@ input {
   justify-content: space-between;
 }
 
+}
+
+@media (max-width:992px) {
+  .container {
+    width: 100%;
+  }
+
+  .BG {
+    padding: 20px 0;
+  }
+
+  .intro {
+    padding-left: 250px;
+    margin: 150px 0;
+  }
+
+  .intro_title {
+    font-size: 28px;
+  }
+
+  .intro_text p {
+    font-size: 15px;
+  }
+
+  .work__img {
+    height: 130px;
+  }
+
+  .elements {
+  align-items: baseline;
+}
+
+  .element_1 {
+    width: 50%;
+  }
+
+  .element_2 {
+    width: 50%;
+  }
+
+  .button {
+    padding: 15px 40px;
+  }
+
+  .video {
+    padding: 150px 0 115px;
+  }
 }
